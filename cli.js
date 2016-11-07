@@ -12,6 +12,7 @@ const fileExists = require('file-exists')
 const cssstats = require('cssstats')
 const trailingLines = require('single-trailing-newline')
 const authorsToMd = require('authors-to-markdown')
+const scss = require('postcss-scss')
 
 const tachyonsBuildCss = require('tachyons-build-css')
 
@@ -82,7 +83,8 @@ tachyonsBuildCss(input, {
   from: inputFile,
   to: outputFile,
   minify: cli.flags.minify,
-  repeat: cli.flags.repeat
+  repeat: cli.flags.repeat,
+  syntax: scss
 }).then(function (result) {
   if (cli.flags.generateDocs) {
     const stats = cssstats(result.css)
