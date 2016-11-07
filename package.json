@@ -9,7 +9,7 @@
   "version": "1.0.11",
   "main": "index.js",
   "bin": {
-    "tachyons": "cli.js"
+    "ds-css-cli": "cli.js"
   },
   "engines": {
     "node": ">=4"
@@ -22,7 +22,7 @@
     "test": "ava -v",
     "test:rebuild": "ava -v test/regenerate-output.js"
   },
-  "repository": "tachyons-css/tachyons-cli",
+  "repository": "digitalsurgeons/ds-css-cli",
   "keywords": [
     "tachyons",
     "css",
