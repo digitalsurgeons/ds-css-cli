@@ -9,7 +9,7 @@
   "version": "1.0.12",
   "main": "index.js",
   "bin": {
-    "ds-css-cli": "cli.js"
+    "ds-css": "cli.js"
   },
   "engines": {
     "node": ">=4"
